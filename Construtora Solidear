@@ -1,0 +1,41 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+body { line-height: 1.6; color: #333; }
+a { text-decoration: none; color: inherit; }
+
+/* Cabeçalho */
+header { background-color: #0d3b66; color: #fff; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; }
+header nav a { margin: 0 15px; font-weight: 500; transition: color 0.3s; }
+header nav a:hover { color: #f76c5e; }
+.cta-header { background-color: #f76c5e; padding: 10px 20px; border-radius: 5px; font-weight: bold; }
+
+/* Hero */
+.hero { background: url('assets/projeto1.jpg') no-repeat center center/cover; color: #fff; height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+.hero h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero p { font-size: 1.5rem; margin-bottom: 30px; }
+.hero .buttons a { background-color: #f76c5e; padding: 15px 25px; margin: 0 10px; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+.hero .buttons a:hover { background-color: #e55a4e; }
+
+/* Seções */
+section { padding: 60px 10%; }
+section h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #0d3b66; }
+.about, .services, .projects, .testimonials, .contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+.card { background-color: #f4f4f4; padding: 20px; border-radius: 10px; flex: 1 1 250px; text-align: center; }
+.card img { width: 100%; border-radius: 10px; }
+
+/* Depoimentos */
+.testimonial { background-color: #0d3b66; color: #fff; padding: 30px; border-radius: 10px; max-width: 400px; text-align: center; }
+
+/* Formulário */
+form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }
+input, textarea { padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 1rem; }
+button { padding: 15px; border: none; background-color: #f76c5e; color: #fff; font-size: 1rem; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
+button:hover { background-color: #e55a4e; }
+
+/* Rodapé */
+footer { background-color: #0d3b66; color: #fff; text-align: center; padding: 20px 10%; }
+footer a { color: #f76c5e; margin: 0 10px; transition: color 0.3s; }
+footer a:hover { color: #fff; }
+
+/* Responsividade */
+@media(max-width: 768px){ .hero h1 { font-size: 2.2rem; } .hero p { font-size: 1.2rem; } }
